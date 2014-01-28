@@ -17,7 +17,8 @@ from innovex.configuration import Configuration
 
   # Path donde se alojan los archivos.
 
-url = "http://download.innovex.cl/debian/"
+#url = "http://download.innovex.cl/debian/"
+url = "192.168.1.119/public/files/support/"
 
 
 def download_status(bloque, tamano_bloque, tamano_total):
@@ -219,7 +220,7 @@ else:
 
     # Creamos tablas.
     # eliminar /var/lib/enviroview/measurements.db
-    os.system("create_tables")
+    os.system("create_tables") # Susituir este bash por python, llamar a la funcion de oxiview
 
     # Creamos el usuario.
     os.system("sudo passwd root")
