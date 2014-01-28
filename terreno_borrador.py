@@ -95,7 +95,7 @@ def conf_file(cfg):
 
   # Agregamos sensores al archivo de configuracion.
     while 1:
-        sensores = raw_input("Ingrese nC:mero de sensores: ")
+        sensores = raw_input("Ingrese numero de sensores: ")
         if sensores.isdigit():
             sensores = int(sensores)
             break
